@@ -4,423 +4,779 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ayoub Ech-Chaayby | Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  <link rel="apple-touch-icon" href="assets/favicon.ico" />
-  <meta name="description" content="Portfolio moderne et immersif d'un étudiant en BUT Informatique à l'IUT d'Orsay, en recherche d'alternance." />
+  <link rel="icon" type="image/x-icon" href="assets/logo2_code.png" />
+  <meta name="description" content="Portfolio d'Ayoub Ech-Chaayby — étudiant BUT Informatique IUT d'Orsay, en recherche d'alternance dès août 2026." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Fond Vidéo -->
-  <div class="video-bg" aria-hidden="true">
-    <video autoplay muted loop playsinline>
-      <source src="assets/video.mp4" type="video/mp4" />
-    </video>
-    <div class="overlay"></div>
+  <!-- ══ SPLASH INTRO ══════════════════════════════════════════════════════ -->
+  <div id="splash" aria-hidden="true">
+    <div class="splash-bg"></div>
+    <div class="splash-content">
+      <div class="splash-letters">
+        <span data-i="0">A</span><span data-i="1">Y</span><span data-i="2">O</span><span data-i="3">U</span><span data-i="4">B</span>
+      </div>
+      <div class="splash-surname">ECH-CHAAYBY</div>
+      <div class="splash-role">Développeur · Data · IA</div>
+      <div class="splash-bar"><div class="splash-bar-fill"></div></div>
+    </div>
+    <div class="splash-corner tl"></div>
+    <div class="splash-corner tr"></div>
+    <div class="splash-corner bl"></div>
+    <div class="splash-corner br"></div>
   </div>
 
-  <!-- Navigation -->
-  <header class="navbar">
+  <!-- ══ VIDEO BG ══════════════════════════════════════════════════════ -->
+  <div class="video-bg" aria-hidden="true">
+    <video autoplay muted loop playsinline><source src="assets/video5.mp4" type="video/mp4" /></video>
+  </div>
+
+  <!-- ══ BG BLOBS ════════════════════════════════════════════════════════ -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+  <div class="dot-grid" aria-hidden="true"></div>
+
+  <!-- ══ NAVBAR ════════════════════════════════════════════════════════= -->
+  <header class="navbar" id="navbar">
     <a href="#accueil" class="logo" aria-label="Retour à l'accueil">
-      <img src="assets/IUT.png" alt="Logo Université Paris-Saclay" class="nav-logo" />
+      <img src="assets/logo2_code.png" alt="Logo" class="nav-logo" />
     </a>
-    <nav aria-label="Navigation principale">
+    <button class="nav-burger" id="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-menu" id="nav-menu" aria-label="Navigation principale">
       <ul>
         <li><a href="#a-propos">À propos</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#projets">Projets</a></li>
         <li><a href="#parcours">Parcours</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#ambitions">Ambitions</a></li>
+        <li><a href="#interets">Intérêts</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
 
-    <!-- Section Accueil -->
+    <!-- ══ HERO ══════════════════════════════════════════════════════════ -->
     <section class="hero" id="accueil">
-      <div class="hero-glow"></div>
-      <img src="assets/ayoub.JPG" alt="Photo de profil de Ayoub Ech-Chaayby" class="profile-pic" />
-      <span class="status-badge">Disponible dès le 1er août 2026 pour alternance</span>
-      <p class="eyebrow">Étudiant BUT Informatique — Université Paris-Saclay</p>
-      <h1>À la recherche d'une <span class="gradient-text">ALTERNANCE</span></h1>
-      <p class="hero-subtitle">
-        Étudiant en BUT Informatique à l'IUT d'Orsay, je conçois des applications, 
-        bases de données et projets web. Je recherche un contrat d'apprentissage 
-        pour allier rigueur académique et projets concrets en entreprise.
-      </p>
-      <div class="hero-stats">
-        <article class="stat">
-          <strong>2025-2028</strong>
-          <span>BUT Informatique Orsay</span>
-        </article>
-        <article class="stat">
-          <strong>Java / SQL</strong>
-          <span>C++, Python, Web</span>
-        </article>
-        <article class="stat">
-          <strong>Permis B</strong>
-          <span>Mobilité IDF / 28</span>
-        </article>
+      <div class="hero-particles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span>
       </div>
-      <div class="social-links">
-        <a href="https://github.com/ayoubechchaayby" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/ayoubechchaayby" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:ayoubechchaayby@gmail.com">Mail</a>
+
+      <div class="hero-inner">
+        <div class="hero-left">
+          <span class="status-badge">
+            <span class="pulse-dot"></span>
+            Disponible dès le 1er août 2026 · Alternance BUT 2
+          </span>
+          <p class="eyebrow">Étudiant BUT Informatique · IUT d'Orsay · Université Paris-Saclay</p>
+          <h1>
+            <span class="h1-line reveal-word">Ayoub</span>
+            <span class="h1-line h1-accent reveal-word">Ech-Chaayby</span>
+          </h1>
+          <p class="hero-subtitle">
+            Développeur en formation, passionné par les données et l'IA.
+            Je conçois des applications, des bases de données et des projets web.
+            Je cherche une alternance pour apprendre vite et apporter de la valeur réelle.
+          </p>
+
+          <div class="social-links">
+            <a href="https://github.com/ayoubechchaayby" target="_blank" rel="noopener" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ayoubechchaayby" target="_blank" rel="noopener" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:ayoub.echchaayby@gmail.com" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Mail
+            </a>
+            <a href="assets/CV_Ayoub_Ech-Chaayby.pdf" target="_blank" rel="noopener" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              CV
+            </a>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projets" class="btn btn-primary">
+              <span>Voir mes projets</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-frame">
+            <div class="profile-ring"></div>
+            <div class="profile-ring ring-2"></div>
+            <img src="assets/ayoub.JPG" alt="Photo de profil Ayoub" class="profile-pic" />
+          </div>
+
+          <div class="hero-stats">
+            <article class="stat-card">
+              <strong class="stat-num" data-count="1">BUT 1</strong>
+              <span>Informatique</span>
+              <small>Parcours A · Orsay</small>
+            </article>
+            <article class="stat-card">
+              <strong class="stat-label">2025–2028</strong>
+              <span>Java · SQL · C++</span>
+              <small>Python, Web & Algo</small>
+            </article>
+            <article class="stat-card">
+              <strong class="stat-label">🚗 Permis B</strong>
+              <span>IDF</span>
+              <small>Eure-et-Loir</small>
+            </article>
+            <article class="stat-card highlighted">
+              <strong class="stat-label">Août 2026</strong>
+              <span>Disponible</span>
+              <small>Alternance</small>
+            </article>
+          </div>
+        </div>
       </div>
-      <div class="hero-actions">
-        <a href="#projets" class="btn">Voir mes projets</a>
-        <a href="#contact" class="btn btn-secondary">Me contacter</a>
-      </div>
-      <a href="#a-propos" class="scroll-indicator">Découvrir</a>
+
+      <a href="#a-propos" class="scroll-indicator" aria-label="Défiler">
+        <span>Découvrir</span>
+        <div class="scroll-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg></div>
+      </a>
     </section>
 
-    <!-- Section À propos -->
+    <!-- ══ À PROPOS ═══════════════════════════════════════════════════════ -->
     <section class="section reveal" id="a-propos">
       <div class="section-header">
-        <p class="section-kicker">Présentation</p>
-        <h2>À propos</h2>
+        <p class="section-kicker">01 — Qui suis-je ?</p>
+        <h2>À <span class="gradient-text">propos</span></h2>
       </div>
       <div class="about-grid">
         <div class="about-text">
-          <p>
-            Je souhaite réaliser mon BUT en alternance pour relier les cours à des objectifs 
-            concrets en entreprise. Mes différentes expériences professionnelles m'ont donné 
-            une vraie avance en organisation et en sérieux : je sais tenir un rythme, 
-            respecter des consignes, communiquer clairement et prendre mes responsabilités.
-          </p>
-          <p>
-            J'aime progresser et je cherche un cadre où je peux apprendre vite, 
-            être utile, puis devenir autonome en développement orienté objet, 
-            gestion de bases de données et conception web.
-          </p>
-          <div class="about-actions" style="margin-top: 28px;">
-            <a href="assets/CV_Ayoub_Ech-Chaayby.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              Consulter mon CV détaillé
+          <p>Je m'appelle <strong>Ayoub Ech-Chaayby</strong> et je suis étudiant en BUT Informatique (Parcours A — Développement) à l'IUT d'Orsay. J'ai obtenu mon bac général avec <strong class="accent-text">mention Bien</strong>, spécialités Mathématiques et Anglais Monde Contemporain, au lycée Fulbert de Chartres.</p>
+          <p>L'informatique me fascine parce qu'elle répond à des questions concrètes : comment une application prend-elle des décisions ? Comment une base de données gère-t-elle des millions d'entrées efficacement ? Et surtout — comment peut-on apprendre à une machine à raisonner ?</p>
+          <p>Ce qui m'attire le plus, c'est l'intersection entre la donnée et l'intelligence artificielle. C'est pourquoi je développe des projets en Java, SQL, C++ et Python, tout en gardant un œil tourné vers le Machine Learning et la Data Science.</p>
+
+          <div class="lang-block">
+            <h4 class="lang-title">Langues</h4>
+            <div class="lang-item">
+              <span class="lang-name">Français</span><span class="lang-level">Natif</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:100%"></div></div>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">Anglais</span><span class="lang-level">C1</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:85%"></div></div>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">Arabe</span><span class="lang-level">B1</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:58%"></div></div>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">Espagnol</span><span class="lang-level">B1</span>
+              <div class="lang-bar"><div class="lang-fill" style="--w:54%"></div></div>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="assets/CV_Ayoub_Ech-Chaayby.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Consulter mon CV
             </a>
           </div>
         </div>
-        <div class="about-card">
-          <span class="about-card-label">Focus actuel</span>
-          <h3>Backend, bases de données et POO</h3>
-          <p>
-            Je travaille principalement sur des projets Java, SQL, C++, Python, 
-            avec une modélisation rigoureuse (UML, MCD/MLD), une logique orientée objet 
-            et des méthodes de test (TDD, JUnit).
-          </p>
+
+        <div class="about-sidebar">
+          <div class="about-card glass-card">
+            <span class="about-card-label">Focus actuel</span>
+            <h3>Backend, BDD &amp; POO</h3>
+            <p>Modélisation UML, architecture orientée objet, requêtes SQL avancées, TDD et tests JUnit.</p>
+            <div class="focus-tags">
+              <span class="tag">Java / POO</span><span class="tag">SQL / BDD</span>
+              <span class="tag">C++</span><span class="tag">TDD</span><span class="tag">UML</span>
+            </div>
+          </div>
+          <div class="about-card glass-card card-alt">
+            <span class="about-card-label">Vision long terme</span>
+            <h3>Data · IA · Machine Learning</h3>
+            <p>Je me dirige vers les métiers de la donnée et de l'IA — ML Engineer, Data Scientist.</p>
+            <div class="focus-tags">
+              <span class="tag">Python</span><span class="tag">Data Science</span><span class="tag">ML</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Section Compétences -->
+    <!-- ══ COMPÉTENCES ════════════════════════════════════════════════════ -->
     <section class="section reveal" id="competences">
       <div class="section-header">
-        <p class="section-kicker">Stack</p>
-        <h2>Compétences</h2>
+        <p class="section-kicker">02 — Stack technique</p>
+        <h2><span class="gradient-text">Compétences</span></h2>
       </div>
-      <div class="skills-panel">
-        <h3>Développement & BDD</h3>
-        <div class="skills-grid">
-          <span class="skill">Java</span>
-          <span class="skill">C++</span>
-          <span class="skill">C#</span>
-          <span class="skill">Python</span>
-          <span class="skill">HTML / CSS</span>
-          <span class="skill">JavaScript (notions)</span>
-          <span class="skill">SQL / MySQL</span>
-          <span class="skill">Programmation Orientée Objet</span>
-          <span class="skill">Algorithmique</span>
-          <span class="skill">Java Swing</span>
-          <span class="skill">JUnit / Tests unitaires</span>
-          <span class="skill">Modélisation BDD</span>
+      <div class="skills-panels">
+        <div class="skills-panel glass-card">
+          <div class="panel-icon">💻</div>
+          <h3>Langages &amp; Dev</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">Java</span><span class="skill-tag">C++</span><span class="skill-tag">C#</span>
+            <span class="skill-tag">Python</span><span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span><span class="skill-tag">Java Swing</span>
+            <span class="skill-tag">POO</span><span class="skill-tag">Algorithmique</span>
+          </div>
         </div>
-      </div>
-      <div class="skills-panel">
-        <h3>Outils & Méthodes</h3>
-        <div class="skills-grid">
-          <span class="skill">Git / GitHub / GitLab</span>
-          <span class="skill">Eclipse IDE</span>
-          <span class="skill">Visual Paradigm</span>
-          <span class="skill">UML</span>
-          <span class="skill">Figma / Penpot</span>
-          <span class="skill">Draw.io</span>
-          <span class="skill">Linux / Shell</span>
-          <span class="skill">VS Code</span>
-          <span class="skill">Maquettage & Wireframes</span>
-          <span class="skill">TDD (Test Driven Development)</span>
+        <div class="skills-panel glass-card">
+          <div class="panel-icon">🗃️</div>
+          <h3>Bases de données</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">SQL / MySQL</span><span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Oracle</span><span class="skill-tag">SQLite</span>
+            <span class="skill-tag">MongoDB</span><span class="skill-tag">MCD / MLD</span>
+            <span class="skill-tag">ETL</span><span class="skill-tag">JupyterLab</span>
+          </div>
         </div>
-      </div>
-      <div class="skills-panel">
-        <h3>Algorithmique & Mathématiques</h3>
-        <div class="skills-grid">
-          <span class="skill">Structures de données</span>
-          <span class="skill">Graphes & algorithmes de parcours</span>
-          <span class="skill">Arbres (BFS / DFS)</span>
-          <span class="skill">Complexité algorithmique</span>
-          <span class="skill">Récursivité</span>
-          <span class="skill">Logique booléenne</span>
-          <span class="skill">Arithmétique & binaire</span>
-          <span class="skill">Mathématiques discrètes</span>
+        <div class="skills-panel glass-card">
+          <div class="panel-icon">🛠️</div>
+          <h3>Outils &amp; Méthodes</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">Git / GitHub</span><span class="skill-tag">GitLab</span>
+            <span class="skill-tag">IntelliJ · VS Code</span><span class="skill-tag">Figma</span>
+            <span class="skill-tag">UML · Draw.io</span><span class="skill-tag">TDD / JUnit</span>
+            <span class="skill-tag">Agile / Scrum</span><span class="skill-tag">CI/CD</span>
+          </div>
         </div>
-      </div>
-    </section> <!-- ✅ FIX 1 : </section> compétences ajouté -->
-
-    <!-- Section Projets -->
-    <section class="section reveal" id="projets">
-      <div class="section-header">
-        <p class="section-kicker">Réalisations</p>
-        <h2>Projets</h2>
-      </div>
-      <div class="projects-grid">
-
-        <article class="card">
-          <div class="card-img-container">
-            <img src="assets/appmedia.png" alt="Aperçu application Java médias" class="card-img" />
+        <div class="skills-panel glass-card">
+          <div class="panel-icon">⚙️</div>
+          <h3>Systèmes &amp; Algo</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">Linux / Shell</span><span class="skill-tag">SSH · RPi</span>
+            <span class="skill-tag">Réseaux TCP/IP</span><span class="skill-tag">IHM</span>
+            <span class="skill-tag">BFS / DFS</span><span class="skill-tag">Structures de données</span>
+            <span class="skill-tag">Complexité algorithmique</span>
           </div>
-          <div class="card-content">
-            <div class="project-tags">
-              <span>Java</span>
-              <span>POO</span>
-              <span>JUnit / TDD</span>
-            </div>
-            <h3>Application de gestion médias</h3>
-            <p>
-              Création d'une application type Letterboxd en Java (Swing). Modélisation POO 
-              via FactoryMedia, CRUD complet, tests unitaires JUnit et maquettage UI/UX.
-            </p>
-            <div class="project-links">
-              <a href="#">En cours de réalisation ...</a>
-            </div>
-          </div>
-        </article> <!-- ✅ bien fermé -->
-
-        <article class="card">
-          <div class="card-img-container">
-            <img src="assets/creabd.png" alt="Projet BDD Réparateur Téléphones" class="card-img" />
-          </div>
-          <div class="card-content">
-            <div class="project-tags">
-              <span>SQL</span>
-              <span>MongoDb SQLite</span>
-              <span>MCD / MLD</span>
-              <span>Reporting</span>
-            </div>
-            <h3>BDD Réparateur Téléphones</h3>
-            <p>
-              Conception d'une base relationnelle métier avec schéma normalisé (PK/FK). 
-              Alimentation et requêtes d'exploitation avancées (JOIN, GROUP BY) pour l'extraction.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/ayoubechchaayby/BD">Code source</a>
-            </div>
-          </div>
-        </article> <!-- ✅ bien fermé -->
-
-        <article class="card">
-          <div class="card-img-container">
-            <img src="assets/BDJO.png" alt="Exploitation BDD Jeux Olympiques" class="card-img" />
-          </div>
-          <div class="card-content">
-            <div class="project-tags">
-              <span>PostgreSQL</span>
-              <span>Python</span>
-              <span>ETL</span>
-            </div>
-            <h3>BDD Jeux Olympiques</h3>
-            <p>
-              Exploitation d'une base (vues, fonctions, rôles). Analyse de données 
-              avec Python (Jupyter Notebook) pour produire des livrables analytiques et KPI.
-            </p>
-            <div class="project-links">
-              <a href="#">En cours de réalisation ...</a>
-            </div>
-          </div>
-        </article> <!-- ✅ bien fermé -->
-
-        <article class="card">
-          <div class="card-img-container">
-            <img src="assets/jeu2d.gif" alt="Jeu vidéo 2D en C++" class="card-img" />
-          </div>
-          <div class="card-content">
-            <div class="project-tags">
-              <span>C++</span>
-              <span>SDL2</span>
-              <span>Gameplay</span>
-            </div>
-            <h3>Jeu vidéo 2D</h3>
-            <p>
-              Développement sous Code::Blocks : boucle de jeu, gestion des collisions, 
-              déplacements, événements clavier/souris et graphismes via SDL2.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/ayoubechchaayby/Jeu2D">Code source</a>
-            </div>
-          </div>
-        </article> <!-- ✅ FIX 2 : </article> Jeu2D bien fermé AVANT SiteAgence -->
-
-        <article class="card"> <!-- ✅ FIX 3 : SiteAgence au même niveau -->
-          <div class="card-img-container">
-            <img src="assets/siteagence.png" alt="Site Agence de Voyage" class="card-img" />
-          </div>
-          <div class="card-content">
-            <div class="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Front-end</span>
-            </div>
-            <h3>Site Agence de Voyage</h3>
-            <p>
-              Recueil de besoin pour une agence de voyage futuriste fictive.
-              Conception et développement d'un site vitrine responsive avec 
-              navigation fluide entre les destinations.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/ayoubechchaayby/SiteAgenceDeVoyage">Code source</a>
-            </div>
-          </div>
-        </article>
-
+        </div>
       </div>
     </section>
 
-    <!-- Section Parcours -->
+    <!-- ══ PROJETS ════════════════════════════════════════════════════════ -->
+    <section class="section reveal" id="projets">
+      <div class="section-header">
+        <p class="section-kicker">03 — Réalisations</p>
+        <h2>Mes <span class="gradient-text">Projets</span></h2>
+        <p class="section-hint">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 15 9 9m0 6 6-6"/><circle cx="12" cy="12" r="10"/></svg>
+          Cliquez sur une carte pour la retourner
+        </p>
+      </div>
+
+      <div class="project-category">
+        <h3 class="category-title"><span class="cat-dot"></span> Projets </h3>
+        <div class="projects-grid">
+
+          <div class="flip-card" role="button" tabindex="0" aria-label="Application Java gestion médias">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glass-card">
+                <div class="flip-front-img">
+                  <img src="assets/appmedia.png" alt="Application Java gestion médias" loading="lazy" />
+                </div>
+                <div class="flip-front-body">
+                  <div class="project-tags"><span>Java</span><span>POO</span><span>JUnit / TDD</span></div>
+                  <h4>App. gestion médias</h4>
+                  <p>Application type Letterboxd en Java Swing. Architecture POO, CRUD complet, tests JUnit.</p>
+                </div>
+                <div class="flip-hint">Retourner →</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="flip-back-content">
+                  <h4>App. gestion médias</h4>
+                  <div class="back-section">
+                    <p class="back-label">Points clés</p>
+                    <ul>
+                      <li>Pattern FactoryMedia, classes encapsulées</li>
+                      <li>IHM Swing event-driven, maquettes Figma</li>
+                      <li>GitLab, refactoring, code production-ready</li>
+                      <li>Tests utilisateurs (5 personnes)</li>
+                    </ul>
+                  </div>
+                  <div class="back-section">
+                    <p class="back-label">Améliorations</p>
+                    <ul>
+                      <li>Recommandation personnalisée</li>
+                      <li>API externe (TMDB, OpenLibrary)</li>
+                    </ul>
+                  </div>
+                  <div class="back-links">
+                    <span class="wip-badge">⏳ En cours</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card" role="button" tabindex="0" aria-label="BDD Réparateur Téléphones">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glass-card">
+                <div class="flip-front-img">
+                  <img src="assets/creabd.png" alt="BDD Réparateur Téléphones" loading="lazy" />
+                </div>
+                <div class="flip-front-body">
+                  <div class="project-tags"><span>SQL</span><span>MongoDB</span><span>MCD/MLD</span></div>
+                  <h4>BDD Réparateur Téléphones</h4>
+                  <p>Base relationnelle métier normalisée 3NF. JOIN multi-tables, GROUP BY, sous-requêtes.</p>
+                </div>
+                <div class="flip-hint">Retourner →</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="flip-back-content">
+                  <h4>BDD Réparateur Téléphones</h4>
+                  <div class="back-section">
+                    <p class="back-label">Points clés</p>
+                    <ul>
+                      <li>Modélisation MCD → MLD → LDD</li>
+                      <li>Vues, procédures stockées, droits</li>
+                      <li>Rapports d'exploitation agrégés</li>
+                    </ul>
+                  </div>
+                  <div class="back-section">
+                    <p class="back-label">Améliorations</p>
+                    <ul><li>Interface web d'administration</li></ul>
+                  </div>
+                  <div class="back-links">
+                    <a href="https://github.com/ayoubechchaayby/BD" target="_blank" rel="noopener" class="btn btn-sm">Code source →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card" role="button" tabindex="0" aria-label="BDD Jeux Olympiques">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glass-card">
+                <div class="flip-front-img">
+                  <img src="assets/BDJO.png" alt="BDD Jeux Olympiques" loading="lazy" />
+                </div>
+                <div class="flip-front-body">
+                  <div class="project-tags"><span>PostgreSQL</span><span>Python</span><span>ETL</span></div>
+                  <h4>BDD Jeux Olympiques</h4>
+                  <p>Pipeline ETL, vues, triggers SQL, rôles. Analyse KPI décisionnels avec JupyterLab.</p>
+                </div>
+                <div class="flip-hint">Retourner →</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="flip-back-content">
+                  <h4>BDD Jeux Olympiques</h4>
+                  <div class="back-section">
+                    <p class="back-label">Points clés</p>
+                    <ul>
+                      <li>Collecte, nettoyage, transformation ETL</li>
+                      <li>Vues, triggers, gestion des rôles</li>
+                      <li>KPI décisionnels Jupyter</li>
+                    </ul>
+                  </div>
+                  <div class="back-section">
+                    <p class="back-label">Améliorations</p>
+                    <ul><li>Dashboard interactif (Streamlit)</li></ul>
+                  </div>
+                  <div class="back-links">
+                    <a href="https://github.com/ayoubechchaayby/JO" target="_blank" rel="noopener" class="btn btn-sm">Code source →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card" role="button" tabindex="0" aria-label="Jeu vidéo 2D C++">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glass-card">
+                <div class="flip-front-img">
+                  <img src="assets/jeu2d.gif" alt="Jeu vidéo 2D C++" loading="lazy" />
+                </div>
+                <div class="flip-front-body">
+                  <div class="project-tags"><span>C++</span><span>SDL2</span><span>Gameplay</span></div>
+                  <h4>Jeu vidéo 2D</h4>
+                  <p>Développement sous Code::Blocks : boucle de jeu, gestion des collisions, déplacements et graphismes SDL2.</p>
+                </div>
+                <div class="flip-hint">Retourner →</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="flip-back-content">
+                  <h4>Jeu vidéo 2D</h4>
+                  <div class="back-section">
+                    <p class="back-label">Points clés</p>
+                    <ul>
+                      <li>Boucle de jeu complète et stable</li>
+                      <li>Gestion des collisions et déplacements</li>
+                      <li>Événements clavier/souris</li>
+                      <li>Graphismes SDL2, optimisation mémoire dynamique</li>
+                    </ul>
+                  </div>
+                  <div class="back-links">
+                    <a href="https://github.com/ayoubechchaayby/Jeu2D" target="_blank" rel="noopener" class="btn btn-sm">Code source →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card" role="button" tabindex="0" aria-label="Portfolio web — cliquer pour voir les détails">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glass-card">
+                <div class="flip-front-img img-placeholder">
+                  <span class="flip-emoji">💻</span>
+                </div>
+                <div class="flip-front-body">
+                  <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JS</span></div>
+                  <h4>Ce portfolio</h4>
+                  <p>Conçu et développé de A à Z sans framework. Design responsive, animations CSS, reveal au scroll.</p>
+                </div>
+                <div class="flip-hint">Retourner →</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="flip-back-content">
+                  <h4>Ce portfolio</h4>
+                  <div class="back-section">
+                    <p class="back-label">Points clés</p>
+                    <ul>
+                      <li>Animations CSS pures (particules, shimmer, float)</li>
+                      <li>Menu burger mobile avec overlay fullscreen</li>
+                      <li>Reveal au scroll avec stagger sur les enfants</li>
+                    </ul>
+                  </div>
+                  <div class="back-section">
+                    <p class="back-label">Améliorations prévues</p>
+                    <ul>
+                      <li>Mode clair / sombre</li>
+                      <li>Traduction anglaise</li>
+                      <li>Section veille technologique</li>
+                    </ul>
+                  </div>
+                  <div class="back-links">
+                    <a href="https://github.com/ayoubechchaayby/Portfolio" target="_blank" rel="noopener" class="btn btn-sm">Code source →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card" role="button" tabindex="0" aria-label="Site Agence de Voyage">
+            <div class="flip-card-inner">
+              <div class="flip-card-front glass-card">
+                <div class="flip-front-img">
+                  <img src="assets/siteagence.png" alt="Site Agence de Voyage" loading="lazy" />
+                </div>
+                <div class="flip-front-body">
+                  <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>Front-end</span></div>
+                  <h4>Site Agence de Voyage</h4>
+                  <p>Recueil de besoin pour une agence fictive futuriste. Site vitrine responsive avec navigation fluide entre destinations.</p>
+                </div>
+                <div class="flip-hint">Retourner →</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="flip-back-content">
+                  <h4>Site Agence de Voyage</h4>
+                  <div class="back-section">
+                    <p class="back-label">Points clés</p>
+                    <ul>
+                      <li>Design responsive et mobile-first</li>
+                      <li>Navigation fluide entre les destinations</li>
+                      <li>Mise en page futuriste, CSS animations</li>
+                    </ul>
+                  </div>
+                  <div class="back-links">
+                    <a href="https://github.com/ayoubechchaayby/SiteAgenceDeVoyage" target="_blank" rel="noopener" class="btn btn-sm">Code source →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PARCOURS ═══════════════════════════════════════════════════════ -->
     <section class="section reveal" id="parcours">
       <div class="section-header">
-        <p class="section-kicker">Formation & expérience</p>
-        <h2>Parcours</h2>
+        <p class="section-kicker">04 — Mon histoire</p>
+        <h2><span class="gradient-text">Parcours</span></h2>
       </div>
       <div class="timeline">
         <article class="timeline-item">
-          <span class="timeline-date">2025 - 2028</span>
-          <h3>BUT Informatique — IUT d'Orsay</h3>
-          <p>Université Paris-Saclay</p>
-          <p>Spécialités : Programmation C++/Java, SQL, UML, Bases de données, Linux, Web.</p>
+          <div class="timeline-left">
+            <span class="timeline-date">2025 – 2028</span>
+            <span class="timeline-tag tag-formation">Formation</span>
+          </div>
+          <div class="timeline-right">
+            <h3>BUT Informatique — Parcours A</h3>
+            <p class="timeline-sub">IUT d'Orsay · Université Paris-Saclay</p>
+            <p>Développement logiciel, bases de données, algorithmique, projets en équipe. C++, Java, C#, SQL, UML, Linux, HTML/CSS.</p>
+          </div>
         </article>
         <article class="timeline-item">
-          <span class="timeline-date">Juillet - Août 2025</span>
-          <h3>Manutentionnaire Intérimaire — Bricomarché</h3>
-          <p>Garancières-en-Beauce</p>
-          <p>Préparation de commandes, suivi quantitatif des stocks, optimisation des flux logistiques.</p>
+          <div class="timeline-left">
+            <span class="timeline-date">2022 – 2025</span>
+            <span class="timeline-tag tag-formation">Formation</span>
+          </div>
+          <div class="timeline-right">
+            <h3>Baccalauréat Général — Mention Bien</h3>
+            <p class="timeline-sub">Lycée Fulbert · Chartres (28)</p>
+            <p>Spécialités Mathématiques et Anglais Monde Contemporain. Option Mathématiques expertes.</p>
+          </div>
         </article>
         <article class="timeline-item">
-          <span class="timeline-date">2023 - 2025</span>
-          <h3>Chef d'Équipe — McDonald's</h3>
-          <p>Ablis</p>
-          <p>Management d'équipe, analyse des indicateurs (caisse, stocks), optimisation des plannings et gestion des priorités sous pression.</p>
+          <div class="timeline-left">
+            <span class="timeline-date">Juil–Août 2025</span>
+            <span class="timeline-tag tag-exp">Expérience</span>
+          </div>
+          <div class="timeline-right">
+            <h3>Manutentionnaire Intérimaire — Bricomarché</h3>
+            <p class="timeline-sub">Garancières-en-Beauce</p>
+            <p>Préparation de commandes, suivi quantitatif des stocks, optimisation des flux logistiques, travail en équipe.</p>
+          </div>
         </article>
         <article class="timeline-item">
-          <span class="timeline-date">2022 - 2026</span>
-          <h3>Accompagnement Scolaire</h3>
-          <p>Auneau</p>
-          <p>Suivi de progression des élèves via Excel, création de supports numériques et organisation autonome.</p>
+          <div class="timeline-left">
+            <span class="timeline-date">2023 – 2025</span>
+            <span class="timeline-tag tag-exp">Expérience</span>
+          </div>
+          <div class="timeline-right">
+            <h3>Chef d'Équipe — McDonald's</h3>
+            <p class="timeline-sub">Ablis</p>
+            <p>Management d'équipe, gestion des priorités sous pression. Analyse des indicateurs (caisse, stocks), optimisation des plannings.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">2022 – 2026</span>
+            <span class="timeline-tag tag-benevole">Bénévolat</span>
+          </div>
+          <div class="timeline-right">
+            <h3>Accompagnement scolaire</h3>
+            <p class="timeline-sub">Auneau (28)</p>
+            <p>Suivi de progression des élèves via Excel, création de supports numériques, organisation autonome du planning.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">Janv. 2022</span>
+            <span class="timeline-tag tag-stage">Stage</span>
+          </div>
+          <div class="timeline-right">
+            <h3>Stage d'observation — Legendre</h3>
+            <p class="timeline-sub">Auneau (28)</p>
+            <p>Logistique et transport de marchandises, gestion des données via Excel, planning chauffeurs, SAV, affrètement.</p>
+          </div>
         </article>
       </div>
     </section>
 
-    <!-- Section Contact -->
-    <section class="section contact reveal" id="contact">
+    <!-- ══ AMBITIONS ══════════════════════════════════════════════════════ -->
+    <section class="section reveal" id="ambitions">
       <div class="section-header">
-        <p class="section-kicker">Échange</p>
-        <h2>Contact</h2>
+        <p class="section-kicker">05 — Projet professionnel</p>
+        <h2>Mes <span class="gradient-text">Ambitions</span></h2>
       </div>
-      <div class="contact-box">
-        <p>
-          Je recherche une alternance pour développer mes compétences techniques et 
-          contribuer activement aux projets de votre entreprise dès août 2026. 
-          Discutons de vos besoins.
-        </p>
-        <div class="contact-actions">
-          <a href="mailto:ayoubechchaayby@gmail.com" class="btn">Me contacter par mail</a>
-          <a href="assets/CV_Ayoub_Ech-Chaayby.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            Télécharger mon CV
+      <div class="ambitions-grid">
+        <article class="ambition-card glass-card">
+          <div class="ambition-num">01</div>
+          <div class="ambition-icon">⚡</div>
+          <span class="ambition-horizon">Court terme</span>
+          <h3>Décrocher une alternance</h3>
+          <p>Intégrer une entreprise en apprentissage dès août 2026, développer mes compétences au maximum et apporter de la valeur réelle.</p>
+        </article>
+        <article class="ambition-card glass-card">
+          <div class="ambition-num">02</div>
+          <div class="ambition-icon">🎓</div>
+          <span class="ambition-horizon">Moyen terme</span>
+          <h3>Intégrer une école d'ingénieurs</h3>
+          <p>Après mon BUT, rejoindre une école spécialisée en Data &amp; IA pour approfondir le ML, le DL et les architectures intelligentes.</p>
+        </article>
+        <article class="ambition-card glass-card">
+          <div class="ambition-num">03</div>
+          <div class="ambition-icon">🚀</div>
+          <span class="ambition-horizon">Long terme</span>
+          <h3>ML Engineer · Data Scientist</h3>
+          <p>Exercer un métier à la croisée de la donnée et de l'IA — concevoir des systèmes capables d'apprendre et créer de la valeur.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ══ INTÉRÊTS ════════════════════════════════════════════════════════ -->
+    <section class="section reveal" id="interets">
+      <div class="section-header">
+        <p class="section-kicker">06 — Hors écran</p>
+        <h2>Centres d'<span class="gradient-text">intérêt</span></h2>
+      </div>
+      <div class="interests-grid">
+        <article class="interest-card glass-card">
+          <div class="interest-icon">📚</div>
+          <h3>Mangas</h3>
+          <p>Lecteur passionné — <em>One Piece</em>, <em>Jujutsu Kaisen</em>, <em>Naruto</em>… J'apprécie la narration longue durée et les univers complexes.</p>
+        </article>
+        <article class="interest-card glass-card">
+          <div class="interest-icon">⚽</div>
+          <h3>Football</h3>
+          <p>Pratique régulière depuis l'enfance. Le jeu collectif et la dimension tactique m'ont appris l'esprit d'équipe.</p>
+        </article>
+        <article class="interest-card glass-card">
+          <div class="interest-icon">💪</div>
+          <h3>Musculation</h3>
+          <p>Pratique hebdomadaire sérieuse. Programmer une progression, suivre des données — une logique qui rejoint directement l'informatique.</p>
+        </article>
+        <article class="interest-card glass-card">
+          <div class="interest-icon">🥊</div>
+          <h3>Sports de combat</h3>
+          <p>Intérêt pour la boxe et le MMA. La stratégie et la discipline que ces sports exigent, je les applique aussi dans mes études.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ══ CONTACT ════════════════════════════════════════════════════════ -->
+    <section class="section contact-section reveal" id="contact">
+      <div class="section-header">
+        <p class="section-kicker">07 — Échangeons</p>
+        <h2><span class="gradient-text">Contact</span></h2>
+      </div>
+      <div class="contact-box glass-card">
+        <p class="contact-intro">Je recherche une alternance pour développer mes compétences et contribuer activement aux projets de votre entreprise dès août 2026. Je réponds rapidement.</p>
+        <div class="contact-info">
+          <a href="https://www.linkedin.com/in/ayoubechchaayby" target="_blank" rel="noopener" class="contact-pill">
+            LinkedIn
           </a>
-          <a href="https://www.linkedin.com/in/ayoubechchaayby" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-            Mon LinkedIn
+          <a href="https://github.com/ayoubechchaayby" target="_blank" rel="noopener" class="contact-pill">
+            GitHub
           </a>
         </div>
-      </div>
-    </section>
-
-    <!-- Section À propos du site -->
-    <section class="section legal reveal" id="mentions-legales">
-      <div class="section-header">
-        <p class="section-kicker">Transparence</p>
-        <h2>À propos du site</h2>
-      </div>
-      <div class="legal-grid">
-        <article class="legal-card">
-          <h3>Fait par</h3>
-          <ul class="legal-list">
-            <li><strong>Ayoub Ech-Chaayby</strong></li>
-            <li>Étudiant BUT Informatique</li>
-            <li>IUT d'Orsay — Paris-Saclay</li>
-            <li>Auneau (28)</li>
-          </ul>
-        </article>
-        <article class="legal-card">
-          <h3>Hébergement</h3>
-          <ul class="legal-list">
-            <li>GitHub Pages</li>
-            <li>
-              <a href="https://github.com/ayoubechchaayby/Portfolio" target="_blank" rel="noopener">
-                Voir le repo →
-              </a>
-            </li>
-          </ul>
-        </article>
-        <article class="legal-card legal-card-wide">
-          <h3>Ce portfolio</h3>
-          <p>
-            Ce site a été entièrement conçu et développé par mes soins 
-            en HTML / CSS / JavaScript, sans framework. Il évolue au fil 
-            de mes projets et apprentissages. Le code source est disponible 
-            librement sur mon GitHub — n'hésitez pas à vous en inspirer !
-          </p>
-        </article>
+        <div class="contact-actions">
+          <a href="mailto:ayoub.echchaayby@gmail.com" class="btn btn-primary">M'envoyer un mail</a>
+          <a href="assets/CV_Ayoub_Ech-Chaayby.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Télécharger mon CV
+          </a>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <p>© 2026 Ayoub Ech-Chaayby</p>
     <nav>
       <a href="#a-propos">À propos</a>
       <a href="#projets">Projets</a>
       <a href="#contact">Contact</a>
-      <a href="https://github.com/ayoubechchaayby" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/ayoubechchaayby/Portfolio" target="_blank" rel="noopener">GitHub →</a>
     </nav>
   </footer>
 
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) entry.target.classList.add("is-visible");
-        });
-      }, { threshold: 0.1 });
-      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  // ── SPLASH ─────────────────────────────────────────────────────────────
+  (function(){
+    const splash = document.getElementById('splash');
+    const letters = splash.querySelectorAll('.splash-letters span');
+    const bar = splash.querySelector('.splash-bar-fill');
 
-      const links = document.querySelectorAll(".navbar nav a[href^='#']");
-      const sections = document.querySelectorAll("section[id]");
-      const updateActiveLink = () => {
-        let current = "";
-        sections.forEach(section => {
-          if (scrollY >= section.offsetTop - 150) current = section.getAttribute("id");
-        });
-        links.forEach(link => {
-          link.classList.toggle("is-active", link.getAttribute("href") === `#${current}`);
-        });
-      };
-      window.addEventListener("scroll", updateActiveLink);
-      updateActiveLink();
+    // Animate letters
+    letters.forEach((l, i) => {
+      l.style.animationDelay = (0.1 + i * 0.12) + 's';
     });
+
+    // Bar fills after letters
+    setTimeout(() => {
+      bar.style.width = '100%';
+    }, 900);
+
+    // Hide splash
+    setTimeout(() => {
+      splash.classList.add('splash-out');
+      setTimeout(() => splash.style.display = 'none', 900);
+    }, 2200);
+  })();
+
+  // ── NAVBAR ─────────────────────────────────────────────────────────────
+  const burger = document.getElementById('nav-burger');
+  const menu   = document.getElementById('nav-menu');
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    burger.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.remove('is-open'); burger.classList.remove('is-open');
+    burger.setAttribute('aria-expanded', false); document.body.style.overflow = '';
+  }));
+
+  // Navbar scroll style
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // ── SCROLL REVEAL ───────────────────────────────────────────────────────
+  const ro = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('is-visible');
+      e.target.querySelectorAll('.skill-tag,.glass-card,.timeline-item,.ambition-card,.interest-card,.lang-item,.contact-pill,.flip-card')
+        .forEach((el, i) => { el.style.animationDelay = `${0.1 + i * 0.07}s`; el.classList.add('child-reveal'); });
+      ro.unobserve(e.target);
+    });
+  }, { threshold: 0.05 });
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+  // ── LANGUAGE BARS ───────────────────────────────────────────────────────
+  const lo = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.querySelectorAll('.lang-fill').forEach(f => f.classList.add('animated'));
+      lo.unobserve(e.target);
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.lang-block').forEach(el => lo.observe(el));
+
+  // ── FLIP CARDS ─────────────────────────────────────────────────────────
+  document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', () => card.classList.toggle('is-flipped'));
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.classList.toggle('is-flipped');
+      }
+    });
+  });
+
+  // ── ACTIVE NAV LINK ─────────────────────────────────────────────────────
+  const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
+  const sections = document.querySelectorAll('section[id]');
+  const sio = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('is-active'));
+        const active = document.querySelector(`.nav-menu a[href="#${e.target.id}"]`);
+        if (active) active.classList.add('is-active');
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => sio.observe(s));
+
+  // ── HERO WORD REVEAL ────────────────────────────────────────────────────
+  setTimeout(() => {
+    document.querySelectorAll('.reveal-word').forEach((w, i) => {
+      w.style.animationDelay = `${2.4 + i * 0.25}s`;
+      w.classList.add('word-animate');
+    });
+  }, 100);
   </script>
 </body>
 </html>
